@@ -1,7 +1,7 @@
 {
     "id": "ci",
     "image": "wedeploy/dxpcloud-jenkins:2.138.3-1.6",
-    "memory": 8192,
+    "memory": 4096,
     "cpu": 4,
     "zeroDowntime": false,
     "volumes": {
