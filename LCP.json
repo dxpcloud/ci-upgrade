@@ -1,6 +1,6 @@
 {
     "id": "ci",
-    "image": "wedeploy/dxpcloud-jenkins:2.164.3-3.0.3",
+    "image": "liferaycloud/jenkins:2.164.3-3.0.3",
     "memory": 8192,
     "cpu": 4,
     "volumes": {
