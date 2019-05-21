@@ -5,8 +5,5 @@
     "cpu": 4,
     "volumes": {
       "ciData": "/var/jenkins_home"
-    },
-    "healthCheck": {
-      "url": "localhost:8080/login"
     }
 }
