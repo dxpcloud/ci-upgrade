@@ -3,6 +3,27 @@
     "image": "liferaycloud/jenkins:2.164.3-3.0.3",
     "memory": 8192,
     "cpu": 4,
+    "loadBalancer": {
+      "targetPort": 8080
+    },
+    "readinessProbe": {
+      "httpGet": {
+        "path": "/login",
+        "port": 8080
+      },
+      "initialDelaySeconds": 60,
+      "timeoutSeconds": 10,
+      "failureThreshold": 12
+    },
+    "livenessProbe": {
+      "httpGet": {
+        "path": "/login",
+        "port": 8080
+      },
+      "initialDelaySeconds": 300,
+      "timeoutSeconds": 10,
+      "failureThreshold": 12
+    },
     "volumes": {
       "ciData": "/var/jenkins_home"
     }
